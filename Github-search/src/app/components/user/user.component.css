@@ -1,0 +1,30 @@
+.profile{
+    float: left;
+    font-size: 18px;
+    margin: 0px;
+    margin-left: 20px;
+    
+}
+#avatar{
+    float: inline-start;
+}
+
+.col-lg-4{
+    float: inline-end;
+}
+
+.list-group{
+    margin: 30px;
+    font-size: small;
+    margin-top: -105px;
+   
+    
+}
+
+#user{
+    margin-left: 40px;
+}
+
+#git{
+    text-align: right;
+}

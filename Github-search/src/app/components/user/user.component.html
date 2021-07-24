@@ -1,1 +1,39 @@
-<p>user works!</p>
+
+    <div class="col-lg-3">
+        <img src="{{profile.avatar_url}}" class="img-circle img-responsive" height="50%" width="65%"alt="Profile picture" id="avatar">
+    </div>
+<div *ngIf="profile" class="profile">
+           <span *ngIf="profile.name"> {{profile.name}}</span>
+           <br>
+            username: {{profile.login}}
+        </div>
+       <!-- <br><br><br><br><br><br><br><br><br> -->
+            <div class="row">
+                
+                <div class="col-lg-5">
+
+                <ul class="list-group">
+                    <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                    <li class="list-group-item" *ngIf="profile.hireable">Available for Hire</li>
+                    <li class="list-group-item" *ngIf="profile.email"><a href="email to:{{profile.email}}">{{profile.email}}</a></li>
+                </ul>
+                <p>
+                    <a href="{{profile.html_url}}" target = "_blank"class="btn btn-sm btn-success " id="user">View profile on github</a>
+                </p>
+                </div>
+                <div class="col-lg-4" id="git">
+                    <!-- <p>
+                        <span class="label-default">{{profile.followers}} Followers</span>
+
+                        <span class="label-primary">{{profile.following}} Following</span>
+
+                        <span class="label-success">{{profile.public_gists}} Public gists</span>
+
+                        <span class="label-info">{{profile.public_repos}} Public Repos</span>
+                    </p> -->
+                   
+                       
+                            
+                </div>
+            </div>
+      

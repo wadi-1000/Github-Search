@@ -1,1 +1,14 @@
-<p>repo works!</p>
+<div class="panel panel-default" id="repos">
+    <div class="panel-heading">
+        <h3 class="panel-title">My Repositories</h3>
+    </div>
+<div class="panel-body" *ngFor='let repo of repos'>
+    <p class="clearfix">
+      Repo name: {{repo.name}}
+        <br>
+        <a href="{{repo.html_url}}" target = "_blank" class="btn btn-sm btn-warning pull-right">View this project on github</a>
+    </p>
+    <p> Description: {{repo.description}}</p>
+</div>
+</div>
+
