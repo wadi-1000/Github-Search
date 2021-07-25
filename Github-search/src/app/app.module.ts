@@ -12,6 +12,7 @@ import { RepoComponent } from './components/repo/repo.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { SearchService } from './services/search.service';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     UserComponent,
     RepoComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
