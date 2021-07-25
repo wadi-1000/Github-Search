@@ -16,13 +16,13 @@
 .list-group{
     margin: 30px;
     font-size: small;
-    margin-top: -105px;
-   
+    margin-top: -115px;
+   margin-left: 100px;
     
 }
 
 #user{
-    margin-left: 40px;
+    margin-left: 100px;
 }
 
 #git{
