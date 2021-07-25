@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserComponent } from './components/user/user.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 
+
 const routes: Routes = [
   { path: 'user', component: UserComponent},
 
