@@ -5,7 +5,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 
 const routes: Routes = [
   { path: 'user', component: UserComponent},
-  { path: 'searchform', component: SearchFormComponent},
+
 ];
 
 @NgModule({

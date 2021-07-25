@@ -16,5 +16,7 @@ export class SearchService {
     }
 updateProfile(username:string){
   this.username = username;
+  
 }
+
 }
