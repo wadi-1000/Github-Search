@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { RepoComponent } from './components/repo/repo.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { SearchService } from './services/search.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,9 +24,10 @@ import { SearchFormComponent } from './search-form/search-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [ UserService,RepoService],
+  providers: [ UserService,RepoService,SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

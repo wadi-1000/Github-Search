@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../services/user.service';
+import { SearchService } from '../services/search.service';
 
 
 @Component({
@@ -9,11 +9,17 @@ import { UserService } from '../services/user.service';
 })
 export class SearchFormComponent implements OnInit {
 
-  username: string;
-  constructor() { }
+  username: string = '';
+
+  constructor(private searchService: SearchService) {
+    this.searchService.getUpdateProfile().subscribe((username: any) =>{
+      console.log(username);
+      this.username = username;
+    })
+  }
 
   findProfile(){
-    this.userService.updateProfile(this.username);
+    this.searchService.updateProfile(this.username);
   }
   ngOnInit(): void {
   }

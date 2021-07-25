@@ -17,6 +17,4 @@ export class UserService {
      return this.http.get("https://api.github.com/users/" + this.username )
     map((res: { json: () => any; }) => res.json());   }
 }
-updateProfile(username:string){
-  this.username = username;
-}
+

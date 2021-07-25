@@ -10,7 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class UserComponent implements OnInit {
 profile: any;
-username:string;
+
 
   constructor(private userService: UserService) {
     this.userService.getProfileInfo().subscribe((profile: any)=>{
@@ -19,9 +19,7 @@ username:string;
     });
    
    }
-   findProfile(){
-     this.userService.updateProfile(this.username);
-   }
+  
   ngOnInit(): void {
   }
 
