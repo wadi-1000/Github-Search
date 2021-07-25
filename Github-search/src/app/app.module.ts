@@ -15,6 +15,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 import { SearchService } from './services/search.service';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     UserComponent,
     RepoComponent,
     SearchFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
