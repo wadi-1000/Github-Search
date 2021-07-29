@@ -17,5 +17,6 @@ export class RepoService {
 
   getProfileRepos(){
     return this.http.get("https://api.github.com/users/wadi-1000/repos")
-   map((res: { json: () => any; }) => res.json());   }
+   
+}
 }

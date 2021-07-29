@@ -15,6 +15,7 @@ export class UserService {
 
    }
    getProfileInfo(){
-    return this.http.get(`https://api.github.com/users/${this.username}`);
-    map((res: { json: () => any; }) => res.json());   }
+    return this.http.get(`https://api.github.com/users/${this.username}`)
+    
+}
 }
