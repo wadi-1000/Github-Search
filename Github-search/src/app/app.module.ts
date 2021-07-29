@@ -16,6 +16,7 @@ import { SearchService } from './services/search.service';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CreatedOnPipe } from './created-on.pipe';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RepoComponent,
     SearchFormComponent,
     NavbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CreatedOnPipe
   ],
   imports: [
     BrowserModule,

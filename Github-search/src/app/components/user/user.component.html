@@ -2,7 +2,8 @@
 <form action="" class="search-form">
 	<div class="form-group">
 		<input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
-	</div>
+    <button type="submit" class="btn btn-success" (click)= "submitName()" id="btn-1">Search</button>
+  </div>
 </form>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +45,7 @@
                   <li class="list-group-item"><strong>Location:</strong> {{profile.location}}</li>
                   <li class="list-group-item"><strong>Email:</strong> {{profile.email}}</li>
                   <li class="list-group-item"><strong>Bio:</strong> {{profile.bio}}</li>
-                  <li class="list-group-item"><strong>Member Since:</strong> {{profile.created_at}}</li>
+                  <li class="list-group-item"><strong>Created:</strong> {{profile.created_at | date}}({{profile.created_at|createdOn}}days ago)</li>
               </ul>
   
             <!-- Collapse Content With User-info -->

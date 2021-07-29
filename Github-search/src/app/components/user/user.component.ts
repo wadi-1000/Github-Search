@@ -24,6 +24,9 @@ username:any;
     });
    
    }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
  
   findProfile(){
     this.searchService.updateProfile(this.username);
@@ -34,9 +37,18 @@ username:any;
  
   }
 
-  
+  submitName(){
+    this.searchService.updateProfile(this.username)
+    this.userService.getProfileInfo().subscribe((data)=>{
+      this.profile = data
+    })
 
-  ngOnInit(): void {
+  ngOnInit() ;
   }
 
+}
+
+
+function ngOnInit() {
+  throw new Error('Function not implemented.');
 }
